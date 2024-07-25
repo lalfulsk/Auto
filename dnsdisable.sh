@@ -5,7 +5,7 @@ sudo systemctl stop systemd-resolved
 
 # Disable systemd-resolved from starting at boot
 sudo systemctl disable systemd-resolved
-
+cp /etc/resolv.conf resolv.bak
 # Remove the existing symlinked resolv.conf
 sudo rm /etc/resolv.conf
 
